@@ -1,0 +1,87 @@
+{
+  "polls": [
+    {
+      "id": "2381",
+      "question": "Which frontend framework?",
+      "isActive": true,
+      "createdAt": "2026-02-09T14:28:06.918Z"
+    },
+    {
+      "id": "2d43",
+      "question": "fav fruit",
+      "isActive": false,
+      "createdAt": "2026-02-10T08:10:36.629Z"
+    },
+    {
+      "id": "c0c1",
+      "question": "sxgbcfgnhfv",
+      "isActive": false,
+      "createdAt": "2026-02-10T08:10:47.479Z"
+    }
+  ],
+  "options": [
+    {
+      "id": "acdf",
+      "pollId": "2381",
+      "text": "Angular",
+      "votes": 2
+    },
+    {
+      "id": "d851",
+      "pollId": "2381",
+      "text": "Vue",
+      "votes": 0
+    },
+    {
+      "id": "8d6a",
+      "pollId": "2d43",
+      "text": "sdfg",
+      "votes": 0
+    },
+    {
+      "id": "82b6",
+      "pollId": "2d43",
+      "text": "cvb",
+      "votes": 1
+    },
+    {
+      "id": "2468",
+      "pollId": "2d43",
+      "text": "v",
+      "votes": 0
+    },
+    {
+      "id": "2d54",
+      "pollId": "c0c1",
+      "text": "xcvvb",
+      "votes": 0
+    },
+    {
+      "id": "a351",
+      "pollId": "c0c1",
+      "text": "xcvb",
+      "votes": 1
+    }
+  ],
+  "votes": [
+    {
+      "id": "25a5",
+      "pollId": "2d43",
+      "optionId": "82b6",
+      "userIp": "127.0.0.1"
+    },
+    {
+      "id": "f9f0",
+      "pollId": "c0c1",
+      "optionId": "a351",
+      "userIp": "127.0.0.1"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "password": "12345"
+    }
+  ]
+}
