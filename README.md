@@ -165,85 +165,97 @@ Automatically generates IDs
 
 Simulates REST API endpoints
 
-## 🔗 API Endpoints
-Method	Endpoint	Description
-GET	/polls	Get all active polls
-GET	/polls/:id	Get poll details
-POST	/polls	Create new poll
-POST	/polls/:id/vote	Vote on a poll
-GET	/polls/:id/results	Get poll results
-📌 Sample Requests
-Create Poll
-POST /polls
+---
 
+## 🔗 API Endpoints
+
+| Method | Endpoint | Description |
+|-------|---------|-------------|
+| GET | `/polls` | Get all active polls |
+| GET | `/polls/:id` | Get poll details |
+| POST | `/polls` | Create a new poll |
+| POST | `/polls/:id/vote` | Vote on a poll |
+| GET | `/polls/:id/results` | Get poll results |
+
+---
+
+## 📌 Sample API Requests
+
+### ➕ Create Poll
+```json
+POST /polls
 {
   "question": "Which framework do you prefer?",
   "options": ["React", "Angular", "Vue"]
 }
-
-Vote
+```
+### Vote on poll
 POST /polls/1/vote
-
+```json
 {
   "optionId": 2,
   "userIp": "192.168.1.10"
 }
+```
+---
 
-📋 Assumptions Made
+## 📋 Assumptions Made
 
-User identity is tracked using IP address for basic duplicate vote prevention.
+- User identity is tracked using IP address for basic duplicate vote prevention  
+- Admin authentication is not implemented (trusted access assumed)  
+- JSON Server is used instead of SQL/NoSQL database as per assignment requirements  
+- Only one vote per user per poll is allowed  
+- Polls are active by default after creation  
+- No role-based access control is implemented  
+- Application is intended for small to medium-scale usage  
+- Network environment is trusted (local development setup)  
 
-Admin authentication is not implemented (assumed trusted access).
+---
 
-JSON Server is used instead of SQL/NoSQL database as per assignment requirements.
+## ▶️ How to Run the Full Application
 
-Only one vote per user per poll is allowed.
+Open **three terminals**:
 
-Polls are active by default after creation.
-
-No role-based access control is implemented.
-
-Application is intended for small to medium-scale usage.
-
-Network environment is trusted (local development setup).
-
-▶️ How to Run the Full Application
-
-Open three terminals:
-
-Terminal 1 – Database
+### 🟢 Terminal 1 – Database
+```bash
 cd backend
 npx json-server --watch db.json --port 3001
-
-Terminal 2 – Backend API
+```
+### Terminal 2 – Backend API
+```bash
 cd backend
 node server.js
+```
 
-Terminal 3 – Frontend UI
+### Terminal 3 – Frontend UI
+```bash
 cd frontend
 npm start
-
-
-Then open:
-
+```
+### Then open:
+```bash
 http://localhost:3000
+```
 
-📁 Project Structure
-Mini-Polling-App
-│
-├── backend
-│   ├── controllers
-│   ├── routes
-│   ├── db.json
-│   └── server.js
-│
-└── frontend
-    ├── pages
-    ├── services
-    ├── App.js
-    └── package.json
+---
 
-✅ Features Implemented
+## 📁 Project Structure
+
+```text
+Mini-Polling-App/
+├── backend/
+│   ├── controllers/        # Request handling logic
+│   ├── routes/             # API route definitions
+│   ├── db.json             # Mock database (JSON Server)
+│   └── server.js           # Express server entry point
+│
+└── frontend/
+    ├── pages/              # Application pages/components
+    ├── services/           # API service calls
+    ├── App.js              # Root React component
+    └── package.json        # Frontend dependencies
+```
+## ✅ Features Implemented
 
 ✔ Create polls (Admin)
 ✔ List active polls
@@ -254,6 +266,7 @@ Mini-Polling-App
 ✔ Error handling
 ✔ Modular code structure
 
-📧 Submission Details
-
+## 📧 Submission Details
+```bash
 GitHub Repository: https://github.com/Abhijeet-Gadakh/Mini-Pooling-application
+```
