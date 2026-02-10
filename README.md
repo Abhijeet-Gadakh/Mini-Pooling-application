@@ -234,4 +234,4 @@ Mini-Polling-App
 
 📧 Submission Details
 
-GitHub Repository: <Add your repo link here>
+GitHub Repository: https://github.com/Abhijeet-Gadakh/Mini-Pooling-application
