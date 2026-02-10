@@ -75,6 +75,9 @@ JSON Server is used as a mock database.
   ]
 }
 
+```
+---
+
 Explanation
 Collection	Description
 polls	Stores poll questions and status
