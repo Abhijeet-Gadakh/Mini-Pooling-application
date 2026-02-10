@@ -1,48 +1,53 @@
-📄 Mini Polling Application
-📌 Project Description
+# 📊 Mini Polling Application
 
-The Mini Polling Application is a full-stack web application that allows administrators to create polls and users to participate by voting on available options. The system provides real-time voting results and prevents duplicate voting using basic validation.
+The **Mini Polling Application** is a full-stack web application that allows administrators to create polls and users to participate by voting on available options.  
+The system displays **real-time voting results** and prevents **duplicate voting** using basic validation.
 
-The application is built using Node.js, Express, JSON Server, and React with Material UI, following a modular and scalable structure.
+This project demonstrates **end-to-end full-stack development** including backend API design, frontend integration, and database management using a mock JSON database.
 
-This project demonstrates end-to-end full-stack development including API design, frontend integration, and database management using a mock JSON database.
+---
 
-🛠 Tech Stack Used
-Backend
+## 🚀 Features
 
-Runtime: Node.js
+- ✔ Create polls (Admin)
+- ✔ List active polls
+- ✔ Vote on polls
+- ✔ Prevent duplicate voting (IP-based)
+- ✔ View real-time poll results
+- ✔ Responsive UI using Material UI
+- ✔ RESTful API integration
+- ✔ Modular backend and frontend architecture
+- ✔ Error handling
 
-Framework: Express.js
+---
 
-Mock Database: JSON Server
+## 🛠 Tech Stack
 
-HTTP Client: Axios
+### 🔧 Backend
+- **Runtime:** Node.js
+- **Framework:** Express.js
+- **Mock Database:** JSON Server
+- **HTTP Client:** Axios
+- **Data Format:** JSON
 
-Data Format: JSON
+### 🎨 Frontend
+- **Framework:** React.js
+- **UI Library:** Material UI (MUI)
+- **Routing:** React Router DOM
+- **State Management:** React Hooks (`useState`, `useEffect`)
+- **HTTP Client:** Axios
 
-Frontend
+### 🧪 Tools
+- Postman / Thunder Client (API Testing)
+- Git & GitHub (Version Control)
 
-Framework: React.js
+---
 
-UI Library: Material UI (MUI)
+## 🗄 Database Structure (`db.json`)
 
-Routing: React Router DOM
+JSON Server is used as a mock database.
 
-State Management: React Hooks (useState, useEffect)
-
-HTTP Client: Axios
-
-Tools
-
-Postman / Thunder Client (API Testing)
-
-Git & GitHub (Version Control)
-
-📂 Database Structure (db.json)
-
-The application uses JSON Server as a mock database.
-
-📄 backend/db.json
+```json
 {
   "polls": [
     {
@@ -52,7 +57,6 @@ The application uses JSON Server as a mock database.
       "createdAt": "2026-02-09T10:15:30.000Z"
     }
   ],
-
   "options": [
     {
       "id": 1,
@@ -61,7 +65,6 @@ The application uses JSON Server as a mock database.
       "votes": 5
     }
   ],
-
   "votes": [
     {
       "id": 1,
